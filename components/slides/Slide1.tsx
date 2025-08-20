@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 const Slide1: React.FC = () => {
     return (
-        <div className="h-full w-full flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
+        <div className="h-full w-full flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in overflow-y-auto">
             <div className="absolute inset-0 z-0 opacity-10">
                 {/* Background decorative circuits */}
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -16,19 +17,19 @@ const Slide1: React.FC = () => {
             </div>
             <div className="relative z-10 text-center flex flex-col items-center">
                 <div className="animate-zoom-in mb-6">
-                    <div className="p-6 bg-cyan-400/10 rounded-full border-2 border-cyan-400">
-                       <svg className="w-24 h-24 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="p-4 bg-cyan-400/10 rounded-full border-2 border-cyan-400">
+                       <svg className="w-20 h-20 md:w-24 md:h-24 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                        </svg>
                     </div>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-black text-white mb-2 animate-slide-up" style={{ animationDelay: '200ms' }}>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-2 animate-slide-up" style={{ animationDelay: '200ms' }}>
                     Habeas Data
                 </h1>
-                <h2 className="text-2xl md:text-4xl font-semibold text-cyan-400 mb-4 animate-slide-up" style={{ animationDelay: '400ms' }}>
+                <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-cyan-400 mb-4 animate-slide-up" style={{ animationDelay: '400ms' }}>
                     Protección de la información personal en Colombia
                 </h2>
-                <p className="text-lg md:text-xl text-slate-300 max-w-3xl animate-slide-up" style={{ animationDelay: '600ms' }}>
+                <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl animate-slide-up" style={{ animationDelay: '600ms' }}>
                     Una mirada a la evolución y relevancia de un derecho fundamental en la era digital.
                 </p>
             </div>

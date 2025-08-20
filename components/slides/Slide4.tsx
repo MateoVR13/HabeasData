@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const TimelineItem: React.FC<{ number: number; title: string; description: string; delay: number }> = ({ number, title, description, delay }) => (
@@ -6,16 +7,16 @@ const TimelineItem: React.FC<{ number: number; title: string; description: strin
             {number}
         </div>
         <div className="flex-grow pl-4 md:pl-6">
-            <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">{title}</h2>
-            <p className="leading-relaxed text-slate-300">{description}</p>
+            <h2 className="font-bold title-font text-lg sm:text-xl text-white mb-1 tracking-wider">{title}</h2>
+            <p className="leading-relaxed text-slate-300 text-sm sm:text-base">{description}</p>
         </div>
     </div>
 );
 
 const Slide4: React.FC = () => {
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-black text-white mb-12 text-center animate-slide-down">La Corte Constitucional: Pionera en la Definición</h1>
+        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in overflow-y-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-12 text-center animate-slide-down">La Corte Constitucional: Pionera en la Definición</h1>
             <div className="relative max-w-2xl">
                  <div className="absolute left-6 md:left-8 top-0 h-full w-1 bg-slate-700 rounded" />
                  <TimelineItem 
