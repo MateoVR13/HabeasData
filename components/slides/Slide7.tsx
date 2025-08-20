@@ -1,19 +1,18 @@
-
 import React from 'react';
 import { ShieldIcon } from '../IconComponents';
 
 const Slide7: React.FC = () => {
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center p-8 animate-fade-in">
+        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
             <h2 className="text-2xl text-cyan-400 font-semibold mb-2 animate-slide-down">CAPÍTULO 5</h2>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-10 text-center animate-slide-down" style={{animationDelay: '200ms'}}>Importancia en la Era Digital</h1>
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl">
                 <div className="flex justify-center items-center animate-zoom-in" style={{animationDelay: '400ms'}}>
-                    <div className="relative w-80 h-80">
+                    <div className="relative w-60 h-60 md:w-80 md:h-80">
                          <div className="absolute inset-0 border-4 border-cyan-500/30 rounded-full animate-ping"></div>
                          <div className="absolute inset-8 border-2 border-cyan-500/50 rounded-full animate-ping delay-200"></div>
                          <div className="absolute inset-0 bg-slate-800 rounded-full flex items-center justify-center">
-                            <ShieldIcon className="w-32 h-32 text-cyan-400" />
+                            <ShieldIcon className="w-24 h-24 md:w-32 md:h-32 text-cyan-400" />
                          </div>
                     </div>
                 </div>

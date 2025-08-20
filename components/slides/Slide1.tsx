@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const Slide1: React.FC = () => {
     return (
-        <div className="h-full w-full flex items-center justify-center p-8 animate-fade-in">
+        <div className="h-full w-full flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
             <div className="absolute inset-0 z-0 opacity-10">
                 {/* Background decorative circuits */}
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

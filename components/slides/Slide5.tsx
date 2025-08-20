@@ -11,11 +11,11 @@ const FeaturePoint: React.FC<{ title: string; text: string; delay: number }> = (
 
 const Slide5: React.FC = () => {
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center p-8 animate-fade-in">
+        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
             <h2 className="text-2xl text-cyan-400 font-semibold mb-2 animate-slide-down">CAPÍTULO 3</h2>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-10 text-center animate-slide-down" style={{animationDelay: '200ms'}}>Reconocimiento como Derecho Autónomo</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl">
                 <div className="animate-zoom-in" style={{animationDelay: '400ms'}}>
                     <img src="https://picsum.photos/seed/habeasdata/600/600" alt="Digital Rights" className="rounded-full shadow-2xl shadow-cyan-500/20 aspect-square object-cover" />
                 </div>

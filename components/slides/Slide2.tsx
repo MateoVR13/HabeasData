@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { AccessIcon, RectifyIcon, DeleteIcon, OpposeIcon } from '../IconComponents';
 
@@ -16,9 +15,9 @@ const InfoCard: React.FC<{ icon: React.ReactNode; title: string; text: string; d
 
 const Slide2: React.FC = () => {
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center p-8 animate-fade-in">
+        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-black text-white mb-12 text-center animate-slide-down">¿Qué es el Habeas Data?</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl w-full">
                 <InfoCard 
                     icon={<AccessIcon className="h-8 w-8 text-cyan-400" />}
                     title="Acceso"

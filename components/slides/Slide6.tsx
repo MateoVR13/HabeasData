@@ -1,8 +1,7 @@
-
 import React from 'react';
 
 const LawCard: React.FC<{ law: string; title: string; description: string; principles: string; delay: number; }> = ({ law, title, description, principles, delay }) => (
-    <div className="bg-slate-800 rounded-lg p-8 shadow-xl border-t-4 border-cyan-500 animate-fade-in-up" style={{ animationDelay: `${delay}ms` }}>
+    <div className="bg-slate-800 rounded-lg p-6 md:p-8 shadow-xl border-t-4 border-cyan-500 animate-fade-in-up" style={{ animationDelay: `${delay}ms` }}>
         <h3 className="text-xl font-bold text-cyan-400 mb-2">{law}</h3>
         <h4 className="text-2xl font-bold text-white mb-3">{title}</h4>
         <p className="text-slate-300 mb-4">{description}</p>
@@ -16,7 +15,7 @@ const LawCard: React.FC<{ law: string; title: string; description: string; princ
 
 const Slide6: React.FC = () => {
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center p-8 animate-fade-in">
+        <div className="h-full w-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 animate-fade-in">
             <h2 className="text-2xl text-cyan-400 font-semibold mb-2 animate-slide-down">CAPÍTULO 4</h2>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-12 text-center animate-slide-down" style={{animationDelay: '200ms'}}>Marco Legal Vigente en Colombia</h1>
             <div className="max-w-5xl w-full space-y-8">
